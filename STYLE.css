@@ -1,0 +1,10 @@
+body {
+    background-image: linear-gradient(
+        180deg,
+        #FFA500 5%,
+        #778899 20%,
+        #000000 60%,
+        #FFD700 95%,
+        
+    );
+}
