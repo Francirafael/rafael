@@ -1,22 +1,25 @@
-const imagem = document. querySelector("img");
-const botao = document.  querySelector("botao");
-const nomeDoPersonagem = document.querySelector("#nome");
-const status = document. querySelector("#status");
-const especie = document. queryselector("#especie");
+const imagem = document. querySelector('img');
+const botao = document.  querySelector('button');
+const nomeDoPersonagem = document.querySelector('#nome');
+const Condicao = document. querySelector('#especie');
+const especies = document. queryselector('#status');
 
-pegarPersonagem =() => {
+pegarPersonagem = () => {
 
-    return fetch(`http://rickandmortyapi.com/api/character/2`, {
+    return fetch(`https://rickandmortyapi.com/api/character/8`, {
         method: 'GET',
         headers: {
          Accept: 'application/json',
          "Content-type": 'application/json'
         }
-}).then((Response) => Response.json()).then((data) =>{
+}).then((response) => response.json()).then((data) =>{
     imagem.src = data.image;
     imagem.alt = data.name;
+    nomeDoPersonagem.innerHTML = data.name;
+    Condicao.innerHTML = data.status;
+    condicao.innerHTML = traduzirCondicao(data);
 });
 
 }
 
-botao.onclick =pegarPersonagem
+botao.onclick = pegarPersonagem;
