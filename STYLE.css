@@ -10,3 +10,31 @@ margin: 0;
 max-width: 100vh;
 width: 100%;
 }
+
+main {
+ align-items: center;
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ position: relative;;
+}
+
+main > select image {
+height: 300px;
+margin: 15px 0;
+width: 300px;
+}
+
+main > ::selection button {
+background-color: bisque;
+border: none;
+border-radius: 4px;
+color: wheat;
+font-family: EuclildBold;
+font-size: 12px;
+letter-spacing 0.7;
+line-height: 15px;
+text-transform: uppercase;
+padding: 9px 23px; 
+}
+
