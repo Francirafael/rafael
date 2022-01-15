@@ -18,6 +18,7 @@ pegarPersonagem = () => {
     nomeDoPersonagem.innerHTML = data.name;
     Condicao.innerHTML = data.status;
     condicao.innerHTML = traduzirCondicao(data);
+    
 });
 
 }
